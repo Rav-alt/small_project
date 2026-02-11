@@ -134,3 +134,5 @@ function loadDateOptions() {
 // Initial load
 loadDateOptions();
 renderTable();
+
+console.log("HELLO EVERYBODY")
