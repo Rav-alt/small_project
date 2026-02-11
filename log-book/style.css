@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.form {
+    background: #ffffff;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form h3 {
+    margin-top: 15px;
+    color: #3498db;
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form input:focus, .form select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+th {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f2f6ff;
+}
+
+#summary {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#summary strong {
+    font-size: 30px;
+    color: #27ae60;
+}
+
+/* Optional label styling */
+#summary span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    margin: 5px;
+}
+
+/* Print clean */
+@media print {
+    body {
+        background: white;
+    }
+    .form, .actions {
+        display: none;
+    }
+}

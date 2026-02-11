@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Refilling Station Logbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Water Refilling Station Logbook</h1>
+
+<div class="form">
+    <input type="text" id="customer" placeholder="Customer Name / Address">
+
+    <h3>Galloon</h3>
+    <select id="galloonType">
+        <option value="">Select Type</option>
+        <option value="Bilog">Bilog</option>
+        <option value="Gripo">Gripo</option>
+    </select>
+    <input type="number" id="galloonQty" placeholder="Quantity">
+
+    <h3>Liters</h3>
+    <input type="number" id="liter6" placeholder="6 Liters (₱15)">
+    <input type="number" id="liter8" placeholder="8 Liters (₱18)">
+    <input type="number" id="liter10" placeholder="10 Liters (₱20)">
+
+    <button onclick="addEntry()">Add Transaction</button>
+</div>
+
+<h2>Transaction History</h2>
+<select id="historyDate" onchange="loadHistory(this.value)"></select>
+
+<h2>Daily Transactions</h2>
+<table id="logTable">
+    <thead>
+    <tr>
+        <th>Customer</th>
+        <th>Galloon</th>
+        <th>Liters</th>
+        <th>Galloon Total</th>
+        <th>Liters Total</th>
+        <th>Total Amount</th>
+    </tr>
+</thead>
+    <tbody></tbody>
+</table>
+
+<h2>Summary</h2>
+<p id="summary"></p>
+
+<div class="actions">
+    <button onclick="exportCSV()">Save to Excel</button>
+    <button onclick="window.print()">Print</button>
+    <button onclick="clearDay()">End Day / Clear</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
